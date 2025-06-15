@@ -55,24 +55,26 @@
                     Hinterlassen Sie eine Nachricht für Oma Hilde oder ihre Familie:
                 </p>
                 
-                <div class="condolence-form">
-                    <form id="condolenceForm">
-                        <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Nachricht:</label>
-                            <textarea id="message" name="message" rows="4" required placeholder="Teilen Sie Ihre Erinnerungen oder Worte des Trostes..."></textarea>
-                        </div>
-                        <button type="submit">Nachricht hinterlassen</button>
-                    </form>
-                </div>
-
-                <div class="messages-container">
-                    <h3>Nachrichten</h3>
-                    <div id="messagesList" class="messages-list">
-                        <!-- Messages will be displayed here -->
+                <div class="github-condolences">
+                    <div class="condolence-method">
+                        <h3>💬 Kondolenz hinterlassen</h3>
+                        <p>Teilen Sie Ihre Erinnerungen und Worte des Trostes mit der Familie:</p>
+                        <a href="https://github.com/michaelwartmann/omahilde/issues/new?labels=kondolenz&template=&title=Kondolenz%20für%20Oma%20Hilde" 
+                           class="condolence-button" target="_blank">
+                            📝 Kondolenz schreiben
+                        </a>
+                        <p class="condolence-note">
+                            <small>Sie benötigen ein kostenloses GitHub-Konto. Ihre Nachricht wird öffentlich sichtbar und permanent gespeichert.</small>
+                        </p>
+                    </div>
+                    
+                    <div class="view-condolences">
+                        <h3>💛 Kondolenzen lesen</h3>
+                        <p>Lesen Sie die liebevollen Nachrichten anderer:</p>
+                        <a href="https://github.com/michaelwartmann/omahilde/issues?q=is%3Aissue+label%3Akondolenz" 
+                           class="view-button" target="_blank">
+                            👀 Alle Kondolenzen anzeigen
+                        </a>
                     </div>
                 </div>
             </section>

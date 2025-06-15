@@ -263,6 +263,69 @@ button[type="submit"]:hover {
     padding: 40px 20px;
 }
 
+.github-condolences {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.condolence-method,
+.view-condolences {
+    background: #f8f9ff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.condolence-method h3,
+.view-condolences h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.condolence-button,
+.view-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white !important;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.condolence-button:hover,
+.view-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    text-decoration: none;
+    color: white !important;
+}
+
+.condolence-note {
+    margin-top: 15px;
+    color: #666;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .github-condolences {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .condolence-method,
+    .view-condolences {
+        padding: 20px;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
