@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Memoriam: Oma Hilde</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="memorial-header">
+            <div class="heart-symbol">💛</div>
+            <h1>Liebe Oma Hilde</h1>
+            <div class="psalm-quote">
+                <em>"Gütes und Barmherzigkeit werden mir folgen mein Leben lang<br>
+                und ich werde bleiben im Hause des Herrn immerdar"</em><br>
+                <small>- Psalm 23</small>
+            </div>
+        </header>
+
+        <main class="memorial-content">
+            <section class="gratitude-section">
+                <h2>Unsere Dankbarkeit</h2>
+                <ul class="gratitude-list">
+                    <li>Danke für deine unendliche Liebe, die uns ein Leben lang begleitet hat</li>
+                    <li>Danke, dass du immer für uns da warst – mit einem offenen Ohr, einem warmen Herzen und starken Armen</li>
+                    <li>Danke für deine Großzügigkeit und dein gutes Herz</li>
+                    <li>Danke für die endlosen Geschichten, die du uns erzählt hast und die Geborgenheit, die wir bei dir fanden. Unsere Kindheit war voller Lachen und Wärme</li>
+                    <li>Danke für die wundervollen Erinnerungen, die wir alle an dich haben</li>
+                    <li>Danke, dass wir dich bis zum letzten Moment begleiten durften – so wie du uns ein Leben lang begleitet hast</li>
+                </ul>
+            </section>
+
+            <section class="farewell-section">
+                <p class="farewell-text">
+                    <strong>Wir lassen dich in Liebe gehen – in unseren Herzen bleibst du für immer.</strong>
+                </p>
+                <p class="reunion-text">
+                    Jetzt bist du wieder mit deinem Opa Karl zusammen.
+                </p>
+            </section>
+
+            <section class="family-section">
+                <h3>Deine Enkel und Urenkel</h3>
+                <p class="family-names">
+                    Nadine, Michael, Nina, Louisa, Alina und Laura<br>
+                    Nico, Celino, Mayur, Mallika, Maia, Valentina und Aurora
+                </p>
+                <p class="date">Juni 2025</p>
+            </section>
+
+            <section class="condolences-section">
+                <h2>Kondolenzbuch</h2>
+                <p class="condolences-intro">
+                    Hinterlassen Sie eine Nachricht für Oma Hilde oder ihre Familie:
+                </p>
+                
+                <div class="condolence-form">
+                    <form id="condolenceForm">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nachricht:</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Teilen Sie Ihre Erinnerungen oder Worte des Trostes..."></textarea>
+                        </div>
+                        <button type="submit">Nachricht hinterlassen</button>
+                    </form>
+                </div>
+
+                <div class="messages-container">
+                    <h3>Nachrichten</h3>
+                    <div id="messagesList" class="messages-list">
+                        <!-- Messages will be displayed here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="memorial-footer">
+            <p>In liebevoller Erinnerung an Oma Hilde</p>
+            <div class="heart-symbol">💛</div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
