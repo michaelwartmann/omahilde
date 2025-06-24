@@ -584,6 +584,151 @@ html {
     }
 }
 
+/* Greeting Section */
+.greeting-section {
+    margin: 40px 0;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+    border-radius: 15px;
+}
+
+.greeting-section h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2d3436;
+}
+
+.greeting-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2d3436;
+    text-align: center;
+}
+
+.greeting-text p {
+    margin-bottom: 15px;
+}
+
+/* Marriage and Family Section */
+.marriage-family-section {
+    margin: 40px 0;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    border-radius: 15px;
+}
+
+.marriage-family-section h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2d3436;
+}
+
+.marriage-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2d3436;
+}
+
+.marriage-content h4 {
+    font-size: 1.4rem;
+    margin: 25px 0 15px 0;
+    color: #2d3436;
+}
+
+/* Faith and Community Section */
+.faith-community-section {
+    margin: 40px 0;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);
+    border-radius: 15px;
+}
+
+.faith-community-section h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2d3436;
+}
+
+.faith-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2d3436;
+}
+
+.faith-content h4 {
+    font-size: 1.4rem;
+    margin: 25px 0 15px 0;
+    color: #2d3436;
+}
+
+/* Songs Section */
+.songs-text {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.songs-text h4 {
+    font-size: 1.4rem;
+    color: #2d3436;
+    margin-bottom: 15px;
+}
+
+.song-lyrics {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2d3436;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+/* Reflection Section */
+.reflection-section {
+    margin: 40px 0;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    color: white;
+}
+
+.reflection-section h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.reflection-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.reflection-content h4 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffd700;
+}
+
+.reflection-content p {
+    margin-bottom: 15px;
+    opacity: 0.95;
+}
+
+/* Biography Section Updates */
+.biography-text h4 {
+    font-size: 1.3rem;
+    margin: 20px 0 10px 0;
+    color: #2d3436;
+    border-bottom: 1px solid #ffd700;
+    padding-bottom: 5px;
+}
+
 /* Print Styles */
 @media print {
     body {
