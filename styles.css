@@ -827,6 +827,27 @@ html {
     color: #2d3436;
 }
 
+.church-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.church-image {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.church-image:hover {
+    transform: scale(1.02);
+}
+
 /* Songs Section */
 .songs-text {
     margin-bottom: 30px;
