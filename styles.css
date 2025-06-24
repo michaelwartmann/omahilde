@@ -161,19 +161,44 @@ body {
     gap: 20px;
 }
 
+.biography-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2d3436;
+    max-width: 800px;
+}
+
+.biography-image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
 .historical-photo {
-    max-width: 300px;
+    max-width: 400px;
     width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.biography-text {
+.image-caption {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #636e72;
+    margin-top: 10px;
     text-align: center;
-    font-size: 1.1rem;
-    line-height: 1.8;
+}
+
+.parent-photo-container {
+    text-align: center;
+}
+
+.photo-label {
+    font-size: 1rem;
+    font-weight: bold;
     color: #2d3436;
+    margin-top: 10px;
+    text-align: center;
 }
 
 /* Memory Book Flow */
@@ -592,6 +617,91 @@ html {
     margin-bottom: 0;
 }
 
+.recipe-link {
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.recipe-link:hover {
+    transform: translateY(-3px);
+}
+
+/* Individual Recipe Sections */
+.individual-recipe-section {
+    margin: 40px 0;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+    border-radius: 15px;
+}
+
+.individual-recipe-section h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2d3436;
+}
+
+.recipe-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.recipe-image-container {
+    text-align: center;
+}
+
+.detailed-recipe-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.detailed-recipe-image:hover {
+    transform: scale(1.02);
+}
+
+.recipe-text {
+    max-width: 600px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #2d3436;
+}
+
+.recipe-text h4 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2d3436;
+}
+
+.recipe-text h5 {
+    font-size: 1.2rem;
+    margin: 20px 0 10px 0;
+    color: #2d3436;
+    border-bottom: 1px solid #ffd700;
+    padding-bottom: 5px;
+}
+
+.recipe-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.recipe-text li {
+    margin-bottom: 5px;
+}
+
+.recipe-text p {
+    margin-bottom: 15px;
+}
+
 /* Tablet Responsive Updates */
 @media (min-width: 768px) {
     .parent-photos {
@@ -756,12 +866,9 @@ html {
     color: white;
 }
 
-.reflection-images {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
+.reflection-image-container {
+    text-align: center;
+    margin: 20px 0;
 }
 
 .reflection-image {
