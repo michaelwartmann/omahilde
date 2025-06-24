@@ -1,5 +1,4 @@
-/* Memorial Website Styles for Oma Hilde */
-
+/* Mobile-First Memorial Website Styles */
 * {
     margin: 0;
     padding: 0;
@@ -14,338 +13,350 @@ body {
     min-height: 100vh;
 }
 
-.container {
+.memorial-container {
     max-width: 800px;
     margin: 0 auto;
-    background: white;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    overflow: hidden;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+/* Header Styles */
 .memorial-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
     text-align: center;
     padding: 40px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px 15px 0 0;
+    color: white;
+    margin: -20px -20px 30px -20px;
 }
 
 .heart-symbol {
-    font-size: 3em;
+    font-size: 2.5rem;
     margin-bottom: 20px;
-    animation: gentle-pulse 3s ease-in-out infinite;
+    animation: glow 2s ease-in-out infinite alternate;
 }
 
-@keyframes gentle-pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.05); }
+@keyframes glow {
+    from { text-shadow: 0 0 20px #ffd700, 0 0 30px #ffd700, 0 0 40px #ffd700; }
+    to { text-shadow: 0 0 10px #ffd700, 0 0 15px #ffd700, 0 0 20px #ffd700; }
 }
 
 .memorial-header h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: normal;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .psalm-quote {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-style: italic;
-    opacity: 0.9;
-    max-width: 600px;
-    margin: 0 auto;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    opacity: 0.95;
 }
 
-.memorial-content {
-    padding: 40px;
+.dates {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    display: inline-block;
+}
+
+/* Book Cover Section */
+.book-cover-section {
+    text-align: center;
+    margin: 40px 0;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.book-title h2 {
+    font-size: 2rem;
+    color: #2d3436;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.book-credit {
+    font-size: 1.1rem;
+    color: #636e72;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.book-cover-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.book-cover-image:hover {
+    transform: scale(1.02);
+}
+
+/* Biography Section */
+.biography-section {
+    margin: 40px 0;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    border-radius: 15px;
+}
+
+.biography-section h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2d3436;
+}
+
+.biography-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.historical-photo {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.biography-text {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2d3436;
+}
+
+/* Memory Book Flow */
+.memory-book-flow {
+    margin: 40px 0;
+}
+
+.book-page {
+    margin-bottom: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.book-page:hover {
+    transform: translateY(-5px);
+}
+
+.book-page-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+}
+
+.book-page-image:hover {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Gratitude Section */
+.gratitude-section {
+    margin: 40px 0;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);
+    border-radius: 15px;
 }
 
 .gratitude-section h2 {
-    color: #667eea;
-    margin-bottom: 25px;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     text-align: center;
+    margin-bottom: 25px;
+    color: #2d3436;
 }
 
 .gratitude-list {
     list-style: none;
-    margin-bottom: 40px;
+    padding: 0;
 }
 
 .gratitude-list li {
-    margin-bottom: 15px;
-    padding-left: 30px;
-    position: relative;
-    font-size: 1.05em;
-    line-height: 1.7;
-}
-
-.gratitude-list li:before {
-    content: "💛";
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.farewell-section {
-    background: #f8f9ff;
-    padding: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    margin: 15px 0;
+    padding: 20px;
     border-radius: 10px;
-    margin: 30px 0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #ffd700;
+    transition: transform 0.2s ease;
+}
+
+.gratitude-list li:hover {
+    transform: translateX(5px);
+}
+
+/* Farewell Section */
+.farewell-section {
     text-align: center;
+    margin: 40px 0;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+    border-radius: 15px;
 }
 
 .farewell-text {
-    font-size: 1.2em;
-    color: #667eea;
-    margin-bottom: 15px;
-    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #2d3436;
+    line-height: 1.8;
 }
 
 .reunion-text {
-    font-size: 1.1em;
-    color: #666;
+    font-size: 1.1rem;
     font-style: italic;
+    color: #636e72;
 }
 
+/* Family Section */
 .family-section {
     text-align: center;
     margin: 40px 0;
-    padding: 20px;
-    background: #fff8f0;
-    border-radius: 10px;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    border-radius: 15px;
 }
 
 .family-section h3 {
-    color: #667eea;
-    margin-bottom: 15px;
-    font-size: 1.4em;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #2d3436;
 }
 
-.family-names {
-    font-size: 1.1em;
-    line-height: 1.8;
-    color: #555;
+.family-text {
+    font-size: 1.1rem;
+    line-height: 2;
+    color: #2d3436;
+    margin-bottom: 20px;
 }
 
 .date {
-    margin-top: 20px;
+    font-size: 1rem;
     font-style: italic;
-    color: #888;
+    color: #636e72;
 }
 
-.condolences-section {
-    margin-top: 50px;
-    padding-top: 30px;
-    border-top: 2px solid #f0f0f0;
-}
-
-.condolences-section h2 {
-    color: #667eea;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.8em;
-}
-
-.condolences-intro {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #666;
-    font-size: 1.1em;
-}
-
-.condolence-form {
-    background: #f8f9ff;
-    padding: 30px;
-    border-radius: 10px;
-    margin-bottom: 40px;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #555;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    font-family: inherit;
-    transition: border-color 0.3s;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #667eea;
-}
-
-button[type="submit"] {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-button[type="submit"]:hover {
-    transform: translateY(-2px);
-}
-
-.messages-container h3 {
-    color: #667eea;
-    margin-bottom: 20px;
-    font-size: 1.4em;
-}
-
-.messages-list {
-    background: #f8f9ff;
-    border-radius: 10px;
-    padding: 20px;
-    min-height: 100px;
-}
-
-.message-item {
-    background: white;
-    padding: 20px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    border-left: 4px solid #667eea;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.message-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-    font-size: 0.9em;
-}
-
-.message-name {
-    font-weight: bold;
-    color: #667eea;
-}
-
-.message-date {
-    color: #888;
-}
-
-.message-text {
-    line-height: 1.6;
-    color: #555;
-}
-
+/* Memorial Footer */
 .memorial-footer {
-    background: #f8f9ff;
     text-align: center;
-    padding: 30px;
-    color: #666;
-    font-style: italic;
-}
-
-.no-messages {
-    text-align: center;
-    color: #888;
-    font-style: italic;
-    padding: 40px 20px;
-}
-
-.github-condolences {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.condolence-method,
-.view-condolences {
-    background: #f8f9ff;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.condolence-method h3,
-.view-condolences h3 {
-    color: #667eea;
-    margin-bottom: 15px;
-    font-size: 1.3em;
-}
-
-.condolence-button,
-.view-button {
-    display: inline-block;
+    padding: 30px 20px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white !important;
-    padding: 15px 25px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 15px 0;
-    transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 0 0 15px 15px;
+    color: white;
+    margin: 30px -20px -20px -20px;
 }
 
-.condolence-button:hover,
-.view-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-    text-decoration: none;
-    color: white !important;
+.memorial-footer p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
 }
 
-.condolence-note {
-    margin-top: 15px;
-    color: #666;
-    font-style: italic;
-}
-
-@media (max-width: 768px) {
-    .github-condolences {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .condolence-method,
-    .view-condolences {
-        padding: 20px;
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        margin: 10px;
-        border-radius: 0;
+/* Tablet Styles */
+@media (min-width: 768px) {
+    .memorial-container {
+        padding: 40px;
+        margin-top: 40px;
     }
     
     .memorial-header {
-        padding: 30px 15px;
+        padding: 60px 40px;
+        margin: -40px -40px 40px -40px;
     }
     
     .memorial-header h1 {
-        font-size: 2em;
+        font-size: 3rem;
     }
     
-    .memorial-content {
-        padding: 20px;
+    .biography-content {
+        flex-direction: row;
+        text-align: left;
     }
     
-    .condolence-form {
-        padding: 20px;
+    .biography-text {
+        text-align: left;
+        flex: 1;
+    }
+    
+    .historical-photo {
+        flex-shrink: 0;
+        margin-right: 30px;
+    }
+    
+    .book-title h2 {
+        font-size: 2.5rem;
+    }
+    
+    .memorial-footer {
+        margin: 40px -40px -40px -40px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    .memorial-container {
+        max-width: 1000px;
+    }
+    
+    .memory-book-flow {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 30px;
+    }
+    
+    .book-page {
+        margin-bottom: 0;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.memorial-container {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+    }
+    
+    .memorial-container {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    
+    .memorial-header,
+    .memorial-footer {
+        background: #f0f0f0 !important;
+        color: #333 !important;
     }
 }
