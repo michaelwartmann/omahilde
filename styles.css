@@ -343,6 +343,247 @@ html {
     animation: fadeIn 1s ease-out;
 }
 
+/* Family Heritage Section */
+.family-heritage-section {
+    margin: 40px 0;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+    border-radius: 15px;
+}
+
+.family-heritage-section h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2d3436;
+}
+
+.parent-photos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.heritage-photo {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.heritage-photo:hover {
+    transform: scale(1.05);
+}
+
+/* Places Section */
+.places-section {
+    margin: 40px 0;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    border-radius: 15px;
+}
+
+.places-section h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2d3436;
+}
+
+.places-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.place-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.place-image:hover {
+    transform: translateY(-5px);
+}
+
+/* Family Memories Section */
+.family-memories-section {
+    margin: 40px 0;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);
+    border-radius: 15px;
+}
+
+.family-memories-section h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2d3436;
+}
+
+.memory-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.memory-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.memory-photo:hover {
+    transform: scale(1.02);
+}
+
+/* Traditions Section */
+.traditions-section {
+    margin: 40px 0;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+    border-radius: 15px;
+}
+
+.traditions-section h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2d3436;
+}
+
+.tradition-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tradition-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.tradition-image:hover {
+    transform: translateY(-5px);
+}
+
+/* Recipes Section */
+.recipes-section {
+    margin: 40px 0;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    border-radius: 15px;
+}
+
+.recipes-section h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2d3436;
+}
+
+.recipes-intro {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: #2d3436;
+    font-style: italic;
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.recipe-category {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-category h4 {
+    font-size: 1.3rem;
+    color: #2d3436;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 10px;
+}
+
+.recipe-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.recipe-image:hover {
+    transform: scale(1.03);
+}
+
+.recipe-image:last-child {
+    margin-bottom: 0;
+}
+
+/* Tablet Responsive Updates */
+@media (min-width: 768px) {
+    .parent-photos {
+        gap: 50px;
+    }
+    
+    .heritage-photo {
+        max-width: 300px;
+    }
+    
+    .places-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .memory-photos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .tradition-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* Desktop Responsive Updates */
+@media (min-width: 1024px) {
+    .places-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .memory-photos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .tradition-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .recipes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* Print Styles */
 @media print {
     body {
