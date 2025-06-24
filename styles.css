@@ -106,6 +106,39 @@ body {
     transform: scale(1.02);
 }
 
+.book-download {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.download-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white !important;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 15px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.download-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: white !important;
+}
+
+.download-note {
+    font-size: 0.9rem;
+    color: #636e72;
+    font-style: italic;
+    margin-top: 10px;
+}
+
 /* Biography Section */
 .biography-section {
     margin: 40px 0;
@@ -358,6 +391,13 @@ html {
     color: #2d3436;
 }
 
+.heritage-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 .parent-photos {
     display: flex;
     justify-content: center;
@@ -376,6 +416,19 @@ html {
 
 .heritage-photo:hover {
     transform: scale(1.05);
+}
+
+.heritage-text {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2d3436;
+}
+
+.heritage-text h4 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #2d3436;
 }
 
 /* Places Section */
@@ -703,6 +756,27 @@ html {
     color: white;
 }
 
+.reflection-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.reflection-image {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.reflection-image:hover {
+    transform: scale(1.05);
+}
+
 .reflection-content {
     font-size: 1.1rem;
     line-height: 1.8;
@@ -718,6 +792,55 @@ html {
 .reflection-content p {
     margin-bottom: 15px;
     opacity: 0.95;
+}
+
+/* Messages Section */
+.messages-section {
+    margin: 40px 0;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.messages-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #2d3436;
+}
+
+.message-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2d3436;
+}
+
+.message-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white !important;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 20px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.message-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: white !important;
+}
+
+.message-note {
+    font-size: 0.9rem;
+    color: #636e72;
+    font-style: italic;
+    margin-top: 15px;
 }
 
 /* Biography Section Updates */
